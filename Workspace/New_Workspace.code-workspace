@@ -1,0 +1,58 @@
+{
+	"folders": [
+		{
+			"path": "C:\\Users\\colem\\BYU-Idaho\\CIT 360 - Documents\\CIT 360 Workspace\\week01\\Week 1"
+		},
+		{
+			"path": "C:\\Users\\colem\\BYU-Idaho\\CIT 360 - Documents\\CIT 360 Workspace\\week02\\Week 2"
+		},
+		{
+			"path": "C:\\Users\\colem\\BYU-Idaho\\CIT 360 - Documents\\CIT 360 Workspace\\week03\\Week 3"
+		},
+		{
+			"path": "C:\\Users\\colem\\BYU-Idaho\\CIT 360 - Documents\\CIT 360 Workspace\\week04\\Week 4"
+		},
+		{
+			"path": "C:\\Users\\colem\\BYU-Idaho\\CIT 360 - Documents\\CIT 360 Workspace\\week05\\Week 5"
+		},
+		{
+			"path": "C:\\Users\\colem\\BYU-Idaho\\CIT 360 - Documents\\CIT 360 Workspace\\week06\\Week 6"
+		},
+		{
+			"path": "C:\\Users\\colem\\BYU-Idaho\\CIT 360 - Documents\\CIT 360 Workspace\\week07\\Week 7"
+		},
+		{
+			"path": "C:\\Users\\colem\\BYU-Idaho\\CIT 360 - Documents\\CIT 360 Workspace\\week08\\Week 8"
+		},
+		{
+			"path": "C:\\Users\\colem\\BYU-Idaho\\CIT 360 - Documents\\CIT 360 Workspace\\week09\\Week 9"
+		},
+		{
+			"path": "C:\\Users\\colem\\BYU-Idaho\\CIT 360 - Documents\\CIT 360 Workspace\\week10\\Week 10"
+		},
+		{
+			"path": "C:\\Users\\colem\\BYU-Idaho\\CIT 360 - Documents\\CIT 360 Workspace\\week11\\Week 11"
+		},
+		{
+			"path": "C:\\Users\\colem\\BYU-Idaho\\CIT 360 - Documents\\CIT 360 Workspace\\week12\\Week 12"
+		},
+		{
+			"path": "C:\\Users\\colem\\BYU-Idaho\\CIT 360 - Documents\\CIT 360 Workspace\\week13\\Week 13"
+		},
+		{
+			"path": "C:\\Users\\colem\\BYU-Idaho\\CIT 360 - Documents\\CIT 360 Workspace\\week14\\Week 14"
+		},
+		{
+			"name": "New-CIT-360",
+			"path": "C:\\Users\\colem\\BYU-Idaho\\New CIT 360\\New-CIT-360"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.classpath": true,
+			"**/.project": true,
+			"**/.settings": true,
+			"**/.factorypath": true
+		}
+	}
+}

@@ -5,7 +5,7 @@
  * program should conform to the style guidelines outlined in this weeks
  * PowerPoint slides.
  */
-public class test {
+public class test2 {
 
     public static void main(String[] argv) {
 
