@@ -6,7 +6,7 @@
 
 /**
  *
- * @author colem
+ * @author coleman
  */
 // Java program to read JSON from a file 
 
@@ -22,13 +22,13 @@ public class JSONPrint
 { 
     public static void main(String[] args) throws Exception  
     { 
-        // parsing file "JSONExample.json" 
+        // Parses the file "JSONExample.json". 
         Object obj = new JSONParser().parse(new FileReader("JSONExample.json")); 
           
-        // typecasting obj to JSONObject 
+        // Typecasts obj to JSONObject.
         JSONObject jsObject = (JSONObject) obj; 
           
-        // getting firstName and lastName 
+        // Gets the firstName and lastName.
         String firstName = (String) jsObject.get("firstName"); 
         String lastName = (String) jsObject.get("lastName"); 
           
@@ -39,20 +39,20 @@ public class JSONPrint
         long age = (long) jsObject.get("age"); 
         System.out.println(age); 
           
-        // getting address 
+        // Gets the address.
         Map address = ((Map)jsObject.get("address")); 
-          
-        // iterating address Map 
+        
+        // Iterating address Map.
         Iterator<Map.Entry> itr1 = address.entrySet().iterator(); 
         while (itr1.hasNext()) { 
             Map.Entry pair = itr1.next(); 
             System.out.println(pair.getKey() + " : " + pair.getValue()); 
         } 
-          
-        // getting phoneNumbers 
+        
+        // Gets the phoneNumbers.
         JSONArray jsArray = (JSONArray) jsObject.get("phoneNumbers"); 
           
-        // iterating phoneNumbers 
+        // Iterating phoneNumbers. 
         Iterator itr2 = jsArray.iterator(); 
           
         while (itr2.hasNext())  
