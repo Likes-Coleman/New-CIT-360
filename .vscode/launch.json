@@ -1,0 +1,132 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JSONExample",
+            "request": "launch",
+            "mainClass": "JSONExample",
+            "projectName": "Week_8"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<Week_1 (2)>",
+            "request": "launch",
+            "mainClass": "app.App",
+            "projectName": "Week_1 (2)"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Threads<Week_10>",
+            "request": "launch",
+            "mainClass": "Threads",
+            "projectName": "Week_10"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CollectionTypes<Week_3>",
+            "request": "launch",
+            "mainClass": "CollectionTypes",
+            "projectName": "Week_3"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Collection_List<Week_3>",
+            "request": "launch",
+            "mainClass": "Collection_List",
+            "projectName": "Week_3"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Collection_Map<Week_3>",
+            "request": "launch",
+            "mainClass": "Collection_Map",
+            "projectName": "Week_3"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Collection_Queue<Week_3>",
+            "request": "launch",
+            "mainClass": "Collection_Queue",
+            "projectName": "Week_3"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Collection_Set<Week_3>",
+            "request": "launch",
+            "mainClass": "Collection_Set",
+            "projectName": "Week_3"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Collection_Tree<Week_3>",
+            "request": "launch",
+            "mainClass": "Collection_Tree",
+            "projectName": "Week_3"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-JavaCollectionsType<Week_3>",
+            "request": "launch",
+            "mainClass": "JavaCollectionsType",
+            "projectName": "Week_3"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-test2<Week_5>",
+            "request": "launch",
+            "mainClass": "test2",
+            "projectName": "Week_5"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HttpURLConnection<Week_7>",
+            "request": "launch",
+            "mainClass": "HttpURLConnection",
+            "projectName": "Week_7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HttpURLConnection2<Week_7>",
+            "request": "launch",
+            "mainClass": "HttpURLConnection2",
+            "projectName": "Week_7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-example<Week_7>",
+            "request": "launch",
+            "mainClass": "example",
+            "projectName": "Week_7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MVC_Main<Week_8>",
+            "request": "launch",
+            "mainClass": "MVC_Main",
+            "projectName": "Week_8"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MultiThreadExample<Week_8>",
+            "request": "launch",
+            "mainClass": "MultiThreadExample",
+            "projectName": "Week_8"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App",
+            "request": "launch",
+            "mainClass": "app.App"
+        }
+    ]
+}
