@@ -1,25 +1,21 @@
 
-/*import java.time.LocalDateTime;
-import java.util.Arrays;
-import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;*/
+import java.util.concurrent.ThreadPoolExecutor;
 
 public class Threads {
+
+    // This program starts three threads and executes them in two pools.
     public static boolean cthread;
     public static String threadProcess = " initializing";
 
     public static void main(String args[]) {
 
-        //Runnable runnableTask = () -> {
         // Creates the three runnable threads.
-        Thread t1 = new Thread(new RunnableProcess());
-        Thread t2 = new Thread(new RunnableProcess());
-        Thread t3 = new Thread(new RunnableProcess());
+        Thread t1 = new Thread(new RunnableProcess("thread-1"));
+        Thread t2 = new Thread(new RunnableProcess("thread-2"));
+        Thread t3 = new Thread(new RunnableProcess("thread-3"));
+
         // Assigns a name for each numbered thread.
         t1.setName("Thread-1");
         t2.setName("Thread-2");
@@ -29,15 +25,28 @@ public class Threads {
         t1.start();
         t2.start();
         t3.start();
-    //};
-}
-/*
-    ExecutorService executor = Executors.newFixedThreadPool(1);
-    List<Future<String>> results = executor.invokeAll(tasksList);
-*/
+
+        /*
+         * The executor framework separates the task creation and execution. a different
+         * method of executing the threads simulatenously.
+         */
+        ExecutorService executeThread = Executors.newCachedThreadPool();
+        ThreadPoolExecutor executorPool = (ThreadPoolExecutor) executeThread;
+
+        // Gives the name of the runnable process.
+        executeThread.submit(new RunnableProcess("pool-1"));
+        executeThread.submit(new RunnableProcess("pool-2"));
+
+        // Displays the size of the pool.
+        System.out.println("size of pool: " + executorPool.getPoolSize());
+
+        // Shuts down the shutdown.
+        executeThread.shutdown();
+    }
+
     /*
-     * Prints information about the current thread and the index it is
-     * on within the RunnableProcess
+     * Prints information about the current thread and the index it is on within the
+     * RunnableProcess
      */
     public static void printFor(int index) {
         StringBuffer sb = new StringBuffer();
@@ -47,19 +56,27 @@ public class Threads {
     }
 }
 
-// Implements thread runnables
+// Implements thread runnables.
 class RunnableProcess implements Runnable {
+    private String name;
+
+    public RunnableProcess(String name) {
+        this.name = name;
+    }
+
     public void run() {
-        for(int i = 1; i < 4; i++) {
-            synchronized(Threads.threadProcess) {
+        for (int i = 1; i < 4; i++) {
+            synchronized (Threads.threadProcess) {
                 Threads.printFor(i);
+                System.out.printf("%s is done. \n", this.name);
+                System.out.print("\n");
 
                 // Will catch any interrupted threads.
                 try {
                     Threads.threadProcess.notifyAll();
                     Threads.threadProcess.wait();
-                } catch(InterruptedException ex) {
-                   ex.printStackTrace();
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
                 }
             }
         }
